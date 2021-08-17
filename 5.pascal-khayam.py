@@ -11,8 +11,11 @@ for i in range(n):
             list.append(pascal_khayam[i-1][j-1]+pascal_khayam[i-1][j])
     pascal_khayam.append(list)
 
-for x in pascal_khayam:
-    print(x)
+for i in range(len(pascal_khayam)):
+    for j in range(len(pascal_khayam[i])):
+        print(pascal_khayam[i][j],end=" ")
+
+    print()
 
 
 
